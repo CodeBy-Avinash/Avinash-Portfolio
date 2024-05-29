@@ -1,7 +1,6 @@
 import {RiReactjsLine} from "react-icons/ri";
 import {TbBrandNextjs} from "react-icons/tb";
 import {SiMongodb} from "react-icons/si";
-import {DiRedis} from "react-icons/di";
 import {FaNodeJs} from "react-icons/fa";
 import {motion} from "framer-motion";
 
@@ -48,12 +47,6 @@ const Technologies = () => {
             animate="animate"
             className="rounded-2xl border-4 border-neutral-800 p-4">
                 <SiMongodb className="text-7xl text-green-500" />
-            </motion.div>
-            <motion.div
-            variants={iconVariants(2)}
-            initial="initial"
-            animate="animate" className="rounded-2xl border-4 border-neutral-800 p-4">
-                <DiRedis className="text-7xl text-red-700" />
             </motion.div>
             <motion.div 
             variants={iconVariants(6)}
