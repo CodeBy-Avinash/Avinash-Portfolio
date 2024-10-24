@@ -7,8 +7,10 @@ const Navbar = () => {
   return (
     <nav className="mb-20 flex items-center justify-between py-6">
       <div className="flex flex-shrink-0 items-center">
-        {/* <img className="mx-2 w-10" src={logo} alt="logo" /> */}
-        <h1 className="text-4xl bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text tracking-tight text-transparent">Avinash Portfolio</h1>
+        {/* Wrap the h1 with an anchor tag for the home link */}
+        <a href="#" className="text-4xl bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text tracking-tight text-transparent">
+          Avinash Portfolio
+        </a>
       </div>
       <div className="flex items-center justify-center gap-6 text-xl">
         <a href="#About" className="hover:text-pink-300">About</a>
