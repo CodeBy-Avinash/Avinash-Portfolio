@@ -61,7 +61,7 @@ export const PROJECTS = [
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
     technologies: ["HTML", "CSS", "JavaScript", "Bootstrap"],
-    link: "/project/portfolio", // Add your project link here
+    link: "https://avinash-portfolio77.netlify.app", // Add your project link here
   },
   {
     title: "Spotify-Clone",
