@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { CONTACT } from "../constants"; // Make sure this import is valid
+import { CONTACT } from "../constants"; // Ensure this import is valid
 
 const Contact = () => {
   // State to manage form input values
@@ -24,8 +24,12 @@ const Contact = () => {
   // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    setSubmitted(true);
+    
+    // Construct the mailto link
+    const mailtoLink = `mailto:eavinash077@gmail.com?subject=Message from ${formData.name}&body=${formData.message}%0D%0AFrom: ${formData.email}`;
+    
+    // Open the user's email client with the constructed mailto link
+    window.location.href = mailtoLink;
 
     // Reset the form after submission
     setFormData({
@@ -33,6 +37,7 @@ const Contact = () => {
       email: "",
       message: ""
     });
+    setSubmitted(true);
   };
 
   return (
@@ -89,12 +94,12 @@ const Contact = () => {
             />
           </div>
           <div className="mb-3">
-          <button
-    className="btnx w-full bg-purple-400 text-white p-2 rounded hover:bg-blue-700 transition duration-300 ease-in-out"
-    type="submit"
-  >
-    Send Message
-  </button>
+            <button
+              className="btnx w-full bg-purple-400 text-white p-2 rounded hover:bg-blue-700 transition duration-300 ease-in-out"
+              type="submit"
+            >
+              Send Message
+            </button>
           </div>
         </form>
       </div>

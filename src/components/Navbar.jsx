@@ -20,8 +20,8 @@ const Navbar = () => {
         <a href="#Contact" className="hover:text-pink-300">Contact</a>
       </div>
       <div className="m-8 flex items-center justify-center gap-4 text-2xl">
-        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-        <a href="https://www.github.com" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
+        <a href="https://www.linkedin.com/in/avinash-e-35a0b92a1/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+        <a href="https://github.com/CodeBy-Avinash" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
         <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
       </div>
     </nav>

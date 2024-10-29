@@ -16,13 +16,13 @@ const FooterApp = () => {
             <a href="#Contact" className="hover:text-pink-300">Contact</a>
           </div>
           <div className="flex items-center justify-center gap-4 text-2xl mb-4">
-            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-pink-300">
+            <a href="https://www.linkedin.com/in/avinash-e-35a0b92a1/" target="_blank" rel="noopener noreferrer" className="hover:text-pink-300">
               <FaLinkedin />
             </a>
-            <a href="https://www.github.com" target="_blank" rel="noopener noreferrer" className="hover:text-pink-300">
+            <a href="https://github.com/CodeBy-Avinash" target="_blank" rel="noopener noreferrer" className="hover:text-pink-300">
               <FaGithub />
             </a>
-            <a href="mailto:your-email@example.com" className="hover:text-pink-300"> {/* Add mailto link */}
+            <a href="mailto:eavinash077@gmail.com" className="hover:text-pink-300"> {/* Add mailto link */}
               <FaEnvelope />
             </a>
           </div>
