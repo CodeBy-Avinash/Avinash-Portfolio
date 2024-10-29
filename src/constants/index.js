@@ -44,30 +44,35 @@ export const PROJECTS = [
     image: project1,
     description:
       "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["Django", "Pyhton", "Bootstrap", "PostgreSQL", "Html"],
+    technologies: ["Django", "Python", "Bootstrap", "PostgreSQL", "HTML"],
+    link: "https://django-ecommerce-kepz.onrender.com", // Add your project link here
   },
   {
     title: "Django-CRM",
     image: project2,
     description:
-      "This CRM application is a web-based system built using Django that enables efficient management of customer data. Designed with CRUD (Create, Read, Update, Delete) functionality",
+      "This CRM application is a web-based system built using Django that enables efficient management of customer data. Designed with CRUD (Create, Read, Update, Delete) functionality.",
     technologies: ["Django", "PostgreSQL", "Bootstrap", "HTML"],
+    link: "https://dcrm-rc6j.onrender.com", // Add your project link here
   },
   {
     title: "Portfolio Website",
     image: project3,
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "javascript", "Bootstrap"],
+    technologies: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+    link: "/project/portfolio", // Add your project link here
   },
   {
     title: "Spotify-Clone",
     image: project4,
     description:
-      "The Spotify Clone is a web-based music streaming application built with React that mimics Spotify's core functionalities, allowing users to explore, play, and organize music tracks. .",
-    technologies: ["Html", "CSS", "React", "Bootstrap"],
+      "The Spotify Clone is a web-based music streaming application built with React that mimics Spotify's core functionalities, allowing users to explore, play, and organize music tracks.",
+    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+    link: "/project/spotify-clone", // Add your project link here
   },
 ];
+
 
 export const CONTACT = {
   address: "767 Fifth Avenue, New York, NY 10153 ",

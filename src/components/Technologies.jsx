@@ -34,7 +34,7 @@ const SkillsSection = () => {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.5 }}
-        className="title text-4xl mb-8"
+        className="text-4xl bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text tracking-tight text-transparent"
       >
         Skills
       </motion.h1>
@@ -138,6 +138,9 @@ const SkillsSection = () => {
           repeatType: "reverse",
         }}
       /> */}
+      <br></br>
+      <br></br>
+      <br></br>
       <br></br>
       <br></br>
       <br></br>
