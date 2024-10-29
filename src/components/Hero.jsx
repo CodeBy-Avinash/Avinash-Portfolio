@@ -1,49 +1,89 @@
-import { HERO_CONTENT} from "../constants";
-import profilePic from "../assets/about.jpg";
-import {motion} from "framer-motion";
+import { HERO_CONTENT } from "../constants";
+import profilePic from "../assets/avinash.jpg";
+import { motion } from "framer-motion";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
+// Motion variants
 const container = (delay) => ({
-  hidden: {x:-100,opacity :0},visible: {
-    x:0,
+  hidden: { x: -100, opacity: 0 },
+  visible: {
+    x: 0,
     opacity: 1,
-    transition: {duration: 0.5, delay: delay}, 
+    transition: { duration: 0.5, delay: delay },
   },
 });
 
 const Hero = () => {
   return (
-    <div className="border-b border-neutral-900 pb-4 lg:mb-35">
-     <div className="flex flex-wrap">
-      <div className="w-full lg:w-1/2">
-        <div className="flex flex-col items-center lg:items-start">
-          <motion.h1 
-          variants={container(0)}
-          initial="hidden"
-          animate="visible"
-          className="pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-6xl">Avinash</motion.h1>
-          <motion.span 
-           variants={container(0.5)}
-           initial="hidden"
-           animate="visible"
-            className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent">Full Stack Developer</motion.span>
-          <motion.p
-           variants={container(1)}
-           initial="hidden"
-           animate="visible" className="my-2 max-w-xl py-6 font-light tracking-tighter">{HERO_CONTENT}</motion.p>
+    <section id="profile" className="border-b border-neutral-900 pb-4 lg:mb-35">
+      <div className="flex flex-wrap">
+        {/* Profile Picture */}
+        <div className="w-full lg:w-1/2 lg:p-8">
+          <div className="flex justify-center">
+            <motion.img
+              initial={{ x: 100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 1, delay: 1.2 }}
+              src={profilePic}
+              alt="Avinash"
+              style={{ width: "55%", height: "auto", borderRadius: "5%" }}
+            />
+          </div>
         </div>
-      </div>
-      <div className="w-full lg:w-1/2 lg:p-8">
-        <div className="flex justify-center">
-            <motion.img 
-            initial={{x:100,opacity: 0}}
-            animate={{x:0,opacity: 1}}
-            style={{ width: "75%", height: "auto" }} // Adjust size here
-            transition={{duration: 1 ,delay: 1.2}} src={profilePic} alt="Avinash" />
-        </div>
-      </div>
-     </div>
-    </div>
-  )
-}
 
-export default Hero
+        {/* Profile Text */}
+        <div className="w-full lg:w-1/2">
+          <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
+            <motion.p
+              variants={container(0)}
+              initial="hidden"
+              animate="visible"
+              className="text-lg font-semibold"
+            >
+              Hello, I'm
+            </motion.p>
+            <motion.h1
+              variants={container(0.2)}
+              initial="hidden"
+              animate="visible"
+              className="pb-2 text-6xl font-thin tracking-tight"
+            >
+              Avinash
+            </motion.h1>
+            <motion.span
+              variants={container(0.5)}
+              initial="hidden"
+              animate="visible"
+              className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent"
+            >
+              Full Stack Developer
+            </motion.span>
+            <motion.p
+              variants={container(1)}
+              initial="hidden"
+              animate="visible"
+              className="my-2 max-w-xl py-6 font-light tracking-tighter"
+            >
+              {HERO_CONTENT}
+            </motion.p>
+
+            {/* Buttons */}
+            <div className="btn-container flex gap-4 mt-4">
+              <motion.button
+                variants={container(1.2)}
+                initial="hidden"
+                animate="visible"
+                className="px-3 py-1 text-sm border border-neutral-700 rounded-md text-white hover:bg-neutral-200 transition-colors duration-200"
+                onClick={() => window.open('./assets/resume-example.pdf')}
+              >
+                Download CV
+              </motion.button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
