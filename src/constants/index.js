@@ -69,13 +69,13 @@ export const PROJECTS = [
     description:
       "The Spotify Clone is a web-based music streaming application built with React that mimics Spotify's core functionalities, allowing users to explore, play, and organize music tracks.",
     technologies: ["HTML", "CSS", "React", "Bootstrap"],
-    link: "/project/spotify-clone", // Add your project link here
+    link: "https://avinash-spotifyclone.netlify.app", // Add your project link here
   },
 ];
 
 
 export const CONTACT = {
-  address: "767 Fifth Avenue, New York, NY 10153 ",
-  phoneNo: "+12 4555 666 00 ",
-  email: "me@example.com",
+  address: "31st,Anna Nagar,Tindivanam,Tamilnadu,India ",
+  phoneNo: "+91 8667801612 ",
+  email: "eavinash077@gmail.com",
 };
