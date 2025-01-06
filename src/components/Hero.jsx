@@ -74,7 +74,7 @@ const Hero = () => {
                 initial="hidden"
                 animate="visible"
                 className="px-3 py-1 text-sm border border-neutral-700 rounded-md text-white hover:bg-neutral-200 transition-colors duration-200"
-                onClick={() => window.open('./assets/resume-example.pdf')}
+                onClick={() => window.open('./assets/AvinashResume.pdf', '_blank')}
               >
                 Download CV
               </motion.button>
