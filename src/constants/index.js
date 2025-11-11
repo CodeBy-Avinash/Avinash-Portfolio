@@ -2,6 +2,7 @@ import project1 from "../assets/projects/project-1.png";
 import project2 from "../assets/projects/project-2.png";
 import project3 from "../assets/projects/project-3.png";
 import project4 from "../assets/projects/project-4.png";
+import resumePDF from "../assets/avinashresume.pdf";
 
 export const HERO_CONTENT = `I'm Avinash, a passionate and skilled fullstack developer specializing in Python. With a strong foundation in both frontend and backend technologies, I've gained expertise in HTML, CSS, JavaScript, Bootstrap, and React on the frontend, along with Python, Django, and MySQL on the backend. I enjoy building efficient, user-friendly applications and am always eager to explore new technologies and take on challenging projects.`;
 

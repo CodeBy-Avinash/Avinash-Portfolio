@@ -2,6 +2,7 @@ import { HERO_CONTENT } from "../constants";
 import profilePic from "../assets/avinash.jpg";
 import { motion } from "framer-motion";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+import resumePDF from "../assets/avinashresume.pdf";
 
 // Motion variants
 const container = (delay) => ({
@@ -74,7 +75,7 @@ const Hero = () => {
                 initial="hidden"
                 animate="visible"
                 className="px-3 py-1 text-sm border border-neutral-700 rounded-md text-white hover:bg-neutral-200 transition-colors duration-200"
-                onClick={() => window.open('./assets/resume-example.pdf')}
+                onClick={() => window.open(resumePDF, '_blank')}
               >
                 Download CV
               </motion.button>
