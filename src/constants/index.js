@@ -57,12 +57,12 @@ export const PROJECTS = [
     link: "https://dcrm-rc6j.onrender.com", // Add your project link here
   },
   {
-    title: "Portfolio Website",
+    title: "Einstein AI Chat App",
     image: project3,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "JavaScript", "Bootstrap"],
-    link: "https://avinash-portfolio77.netlify.app", // Add your project link here
+      "Built an AI-powered chatbot that simulates Albert Einstein using Google Gemini models, LangChain, and Gradio. Implemented custom system prompts, chat history management, and an interactive UI, enabling the model to respond with humor and personal anecdotes. Deployed the app for real-time user interaction..",
+    technologies: ["Python", "LangChain", "Gemini", "Gradio"],
+    link: "https://71f5dcb6e756aa79c7.gradio.live", // Add your project link here
   },
   {
     title: "Spotify-Clone",
