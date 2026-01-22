@@ -62,7 +62,7 @@ export const PROJECTS = [
     description:
       "Built an AI-powered chatbot that simulates Albert Einstein using Google Gemini models, LangChain, and Gradio. Implemented custom system prompts, chat history management, and an interactive UI, enabling the model to respond with humor and personal anecdotes. Deployed the app for real-time user interaction..",
     technologies: ["Python", "LangChain", "Gemini", "Gradio"],
-    link: "https://1040c91f2109f09a09.gradio.live", // Add your project link here
+    link: "https://huggingface.co/spaces/AvinashCris/Einstein-Ai-Chatapp", // Add your project link here
   },
   {
     title: "Spotify-Clone",
