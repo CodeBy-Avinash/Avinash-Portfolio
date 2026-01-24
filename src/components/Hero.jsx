@@ -1,5 +1,9 @@
 import { HERO_CONTENT } from "../constants";
+<<<<<<< HEAD
 import profilePic from "../assets/avinash.png";
+=======
+import profilePic from "../assets/avinash.jpeg";
+>>>>>>> abf0bd4f345e974ca88df18d67b40c9f2abc71ca
 import { motion } from "framer-motion";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import resumePDF from "../assets/avinashresume.pdf";
